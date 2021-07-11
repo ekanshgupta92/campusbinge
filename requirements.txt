@@ -1,0 +1,5 @@
+pymongo
+discord.py
+cachetools
+numpy
+dnspython
