@@ -1,5 +1,4 @@
 # This script requires the 'members' privileged intents to get the list of users on a guild 
-# ODYxMjcwNjkzODIyOTg4Mjg4.YOHW1w.eyiM6h_gAUXC5jcs_8ey-SnMAn8 ekansh token
 
 import discord
 from discord.ext import commands
@@ -16,7 +15,6 @@ intents.members = True
 
 token = open("token.txt", "r").read()
 bot = commands.Bot(command_prefix='$', description=description, intents=intents)
-# cluster = MongoClient("mongodb+srv://test:eg123456@cluster0.5ajlh.mongodb.net/test")
 uri = os.environ['MONGODB_URI']
 cluster = MongoClient(uri)
 db = cluster["discord_test"]
